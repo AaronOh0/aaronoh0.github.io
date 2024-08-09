@@ -3,50 +3,52 @@
   margin: 0;
 }
 
-body {
-  /* background-color: var(--main-bg); */
-  /* font-family: "Roboto", sans-serif; */
-}
-
 :root {
   --main-bg: rgb(12, 52, 61);
   --text-color: rgb(255, 229, 153);
   --hover-color: rgb(249, 191, 75);
+  --fade-end-color: rgb(212, 224, 232);
+}
+
+body {
+  /* background-color: var(--main-bg); */
+  font-family: "Roboto", sans-serif;
+}
+
+#årvollskogen_91,
+#årvollskogen_95 {
+  text-decoration: underline;
 }
 
 .header {
   display: flex;
-  background-color: beige;
-  height: 200px;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--main-bg);
+  height: 230px;
+  align-items: center;
 }
 
 .header a {
   text-decoration: none;
-  font-size: 30px;
-  margin-right: 20px;
+  font-size: 24px;
+  margin-right: 15px;
   color: var(--text-color);
   cursor: pointer;
 }
 
+.leftInfo {
+  margin-right: 100px;
+}
+
 .rightInfo {
-  position: relative;
-  margin-right: 20%;
+  margin-left: 70px;
 }
 
 #logo {
-  height: 200px;
+  height: 230px;
   width: auto;
   margin-top: 1px;
-  margin-left: 100%;
-
   position: relative;
-}
-
-.leftInfo {
-  position: relative;
+  margin-left: 650px;
 }
 
 #contact {
@@ -75,8 +77,94 @@ body {
   text-decoration: underline;
 }
 
-.mainImageDiv,
-.mainImageDiv img {
+.slideshow-container {
   width: 100%;
-  height: 600px;
+  height: 720px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slidenumber,
+.slide-caption {
+  position: absolute;
+  color: var(--text-color);
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.slidenumber {
+  top: 10px;
+  left: 10px;
+}
+
+.slide-caption {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mainImageDiv img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.menu-button-div {
+  margin-left: 21px;
+  color: var(--text-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menu-button-div:hover {
+  color: var(--hover-color);
 }
