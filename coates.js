@@ -8,24 +8,19 @@ let currentSlide = 0;
 
 const slides = {
   0: {
-    src: "bilderEier/Transfer_4/ewewewewq.jpg",
-    caption: "Bilde over Årevollskogen 91",
-    slideNumber: "1/4",
+    src: "bilderEier/Transfer/Sundstredet 5 (1 of 6).jpg",
+    caption: "Inngang til Årvollskogen 95",
+    slideNumber: "1/3",
   },
   1: {
-    src: "bilderEier/Transfer_4/16802732.jpg",
+    src: "bilderEier/Transfer/Sundstredet 5 (4 of 6).jpg",
     caption: "Inngang til Årevollskogen 91",
-    slideNumber: "2/4",
+    slideNumber: "2/3",
   },
   2: {
-    src: "bilderEier/Transfer_4/16802730.jpg",
+    src: "bilderEier/Transfer/Sundstredet 5 (6 of 6).jpg",
     caption: "Caption",
-    slideNumber: "3/4",
-  },
-  3: {
-    src: "bilderEier/Transfer_4/16802725.jpg",
-    caption: "Skriv inn noe",
-    slideNumber: "4/4",
+    slideNumber: "3/3",
   },
 };
 
@@ -42,12 +37,13 @@ function updateSlide() {
 
   if (currentSlide == 0) {
     document.querySelector(".prev").style.display = "none";
+    document.querySelector(".next").style.display = "block";
   } else if (currentSlide == 1) {
     document.querySelector(".prev").style.display = "block";
-  } else if (currentSlide == 3) {
-    document.querySelector(".next").style.display = "none";
-  } else {
     document.querySelector(".next").style.display = "block";
+  } else if (currentSlide == 2) {
+    document.querySelector(".prev").style.display = "block";
+    document.querySelector(".next").style.display = "none";
   }
 }
 
