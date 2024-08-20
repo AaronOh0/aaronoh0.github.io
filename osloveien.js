@@ -8,36 +8,50 @@ let currentSlide = 0;
 
 const slides = {
   0: {
-    src: "bilderEier/Transfer_4/Årvollskogen 91 markert.jpg",
+    src: "bilderEier/Osloveien Bilder/009_002_Osloveien-366-0004.jpg.jpg.jpg",
     caption: "",
-    slideNumber: "1/6",
+    slideNumber: "1/9",
   },
   1: {
-    src: "bilderEier/Bilder/639950159990.jpg",
+    src: "bilderEier/Osloveien Bilder/012_005_Osloveien-366-0009.jpg.jpg.jpg",
     caption: "",
-    slideNumber: "2/6",
+    slideNumber: "2/9",
   },
 
   2: {
-    src: "bilderEier/Transfer_3/639950159994.jpg",
+    src: "bilderEier/Osloveien Bilder/003_015_Osloveien-366-1001.jpg.jpg.jpg",
     caption: "",
-    slideNumber: "3/6",
+    slideNumber: "3/9",
   },
-
   3: {
-    src: "bilderEier/Transfer_4/16802732.jpg",
+    src: "bilderEier/Osloveien Bilder/osloveien inne fra tlf.jpg",
     caption: "",
-    slideNumber: "4/6",
+    slideNumber: "4/9",
   },
   4: {
-    src: "bilderEier/Transfer_4/16802730.jpg",
+    src: " bilderEier/Osloveien Bilder/020_021_Osloveien 366 kartfoto.jpg.jpg.jpg",
     caption: "",
-    slideNumber: "5/6",
+    slideNumber: "5/9",
   },
   5: {
-    src: "bilderEier/Transfer_4/16802725.jpg",
+    src: "bilderEier/Osloveien Bilder/023_Tegninger markert Osloveien 366_1.jpg.jpg",
     caption: "",
-    slideNumber: "6/6",
+    slideNumber: "6/9",
+  },
+  6: {
+    src: "bilderEier/image.png",
+    caption: "",
+    slideNumber: "7/9",
+  },
+  7: {
+    src: "bilderEier/image2.png",
+    caption: "",
+    slideNumber: "8/9",
+  },
+  8: {
+    src: "bilderEier/image3.png",
+    caption: "",
+    slideNumber: "9/9",
   },
 };
 
@@ -56,7 +70,7 @@ function updateSlide() {
     document.querySelector(".prev").style.display = "none";
   } else if (currentSlide == 1) {
     document.querySelector(".prev").style.display = "block";
-  } else if (currentSlide == 5) {
+  } else if (currentSlide == 8) {
     document.querySelector(".next").style.display = "none";
   } else {
     document.querySelector(".next").style.display = "block";
