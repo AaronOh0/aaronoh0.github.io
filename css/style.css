@@ -307,26 +307,49 @@ body {
   }
 }
 
-.contact-div {
+.contact-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  height: 60vh;
+  text-align: left;
+  height: 50vh;
+  position: relative;
+  margin-right: 35dvw;
 }
 
 .contacttitle {
-  font-size: 32px;
+  font-size: 42px;
   color: var(--text-color);
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
 .contact-details {
   font-size: 20px;
   color: var(--text-color);
   margin-bottom: 10px;
+}
+
+.contact-info {
+  background-color: blue;
+  width: 50%;
+  margin-left: 25dvh;
+}
+
+.contact-form {
+  background-color: red;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.contact-epost {
+  margin-top: 2dvh;
+}
+
+.message {
+  margin-top: 2dvh;
 }
 
 #contact-link {
