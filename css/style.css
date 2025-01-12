@@ -22,7 +22,8 @@ body {
 #coatesKvartalet,
 #osloveien,
 #contacthtml,
-#solaneindom {
+#solaneindom,
+#nyeprosjekter {
   /* text-decoration: underline; */
   color: var(--hover-color);
 }
