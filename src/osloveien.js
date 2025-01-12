@@ -8,48 +8,48 @@ let currentSlide = 0;
 
 const slides = {
   0: {
-    src: "bilderEier/Osloveien Bilder/009_002_Osloveien-366-0004.jpg.jpg.jpg",
+    src: "",
     caption: "",
     slideNumber: "1/9",
   },
   1: {
-    src: "bilderEier/Osloveien Bilder/012_005_Osloveien-366-0009.jpg.jpg.jpg",
+    src: "",
     caption: "",
     slideNumber: "2/9",
   },
 
   2: {
-    src: "bilderEier/Osloveien Bilder/003_015_Osloveien-366-1001.jpg.jpg.jpg",
+    src: "",
     caption: "",
     slideNumber: "3/9",
   },
   3: {
-    src: "bilderEier/Osloveien Bilder/osloveien inne fra tlf.jpg",
+    src: "",
     caption: "",
     slideNumber: "4/9",
   },
   4: {
-    src: " bilderEier/Osloveien Bilder/020_021_Osloveien 366 kartfoto.jpg.jpg.jpg",
+    src: " ",
     caption: "",
     slideNumber: "5/9",
   },
   5: {
-    src: "bilderEier/Osloveien Bilder/023_Tegninger markert Osloveien 366_1.jpg.jpg",
+    src: "",
     caption: "",
     slideNumber: "6/9",
   },
   6: {
-    src: "bilderEier/image.png",
+    src: "",
     caption: "",
     slideNumber: "7/9",
   },
   7: {
-    src: "bilderEier/image2.png",
+    src: "",
     caption: "",
     slideNumber: "8/9",
   },
   8: {
-    src: "bilderEier/image3.png",
+    src: "",
     caption: "",
     slideNumber: "9/9",
   },

@@ -21,7 +21,8 @@ body {
 #årvollskogen_95,
 #coatesKvartalet,
 #osloveien,
-#contacthtml {
+#contacthtml,
+#solaneindom {
   /* text-decoration: underline; */
   color: var(--hover-color);
 }
