@@ -108,7 +108,7 @@ body {
 }
 
 .linkinfo:hover {
-  color: var(--hover-color); /* or any color you want on hover */
+  color: var(--hover-color);
 }
 
 .linkinfo:hover::before {
@@ -328,7 +328,7 @@ body {
 .contact-details {
   font-size: 20px;
   color: var(--text-color);
-  margin-bottom: 10px;
+  margin-bottom: 21px;
 }
 
 .contact-info {
@@ -337,11 +337,29 @@ body {
   margin-left: 25dvh;
 }
 
+.contact-name {
+  display: flex;
+  flex-direction: row; /* Horisontal visning */
+  gap: 20px; /* Avstand mellom input-feltene */
+  width: 100%; /* Full bredde */
+}
+
+.contact-name label {
+  margin-bottom: 5px;
+}
+
+.input-name {
+  width: 45%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
 .contact-form {
   background-color: red;
   display: flex;
   width: 50%;
   flex-direction: column;
+  margin-right: 25dvh;
 }
 
 .contact-epost {
