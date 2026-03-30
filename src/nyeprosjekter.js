@@ -1,7 +1,6 @@
 const slides = [
-  { src: "bilderEier/Transfer/Sundstredet 5 (6 of 6).jpg", caption: "" },
-  { src: "bilderEier/Transfer/Sundstredet 5 (1 of 6).jpg", caption: "" },
-  { src: "bilderEier/Transfer/Sundstredet 5 (4 of 6).jpg", caption: "" },
+  /* Add nye prosjekter image paths here when available */
+  /* { src: "bilderEier/...", caption: "" }, */
 ];
 
 let currentSlide = 0;
@@ -13,6 +12,13 @@ window.onload = function () {
   const prevBtn = document.querySelector(".prev");
   const nextBtn = document.querySelector(".next");
   const thumbStrip = document.querySelector(".thumb-strip");
+
+  if (slides.length === 0) {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    slideNumber.textContent = "";
+    return;
+  }
 
   slides.forEach(function (slide, i) {
     const thumb = document.createElement("img");
